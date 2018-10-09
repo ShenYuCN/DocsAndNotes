@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initModel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (instancetype)initWithDict:(NSDictionary *)dict
+{
+    self = [super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
+
++ (instancetype)&lt;#classFun#&gt;
+{
+    return [[self alloc] initWithDict:dict];
+}
+
++(NSArray *)&lt;#array#&gt;
+{
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"&lt;#name#&gt;.plist" ofType:nil]];
+    
+    NSMutableArray *arrayM = [NSMutableArray array];
+    
+    for (NSDictionary *dict in array) {
+        [arrayM addObject:[self &lt;#className#&gt;]];
+    }
+    return arrayM;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7E1A7444-B4BF-4188-8071-3E50A949AC3F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>模型实例化方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
